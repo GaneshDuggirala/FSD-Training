@@ -1,0 +1,75 @@
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* Header */
+
+.mylogo1 {
+  height: 100px;
+  width: 100px;
+  margin-left: 200px;
+}
+
+.myhead1 {
+    font-size: 25px;
+  margin-top: -80px;
+  margin-left: -100px;
+}
+
+.mylogo2 {
+  height: 70px;
+  width: 250px;
+  margin-left: 850px;
+  margin-top: -90px;
+}
+.mylogin {
+  margin-top: -50px;
+}
+.mylogin a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+
+/* Marquee Tag */
+
+.mymarquee{
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Nav Table  */
+
+.mynav{
+  background-color: black;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.mypage1{
+  color: white;
+  text-decoration: none;
+}
+.mypage2{
+  color: white;
+  text-decoration: none;
+}
+.mypage3{
+  color: white;
+  text-decoration: none;
+}
+.mypage4{
+  color: white;
+  text-decoration: none;
+}       

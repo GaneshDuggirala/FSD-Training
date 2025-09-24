@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power of Petals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+.bgcolor{
+    background-color:rgba(0,0,0,0.92);
+    height:1100px;
+    color:pink;
+    }
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.pd-heading{
+    width:700px;
+    margin-top:0px;
+    margin-left:500px;
+    border:none;
+    border-top:1px solid bisque;
+    text-align: center;
+    
+}
+.delivery{
+    position:absolute;
+    width:550px;
+    height:500px;
+    text-align:center;
+    left:600px;
+    font-size: 28px;
+    margin-top:-960px;
+    background-color:black;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0px 0px 20px 0.10px pink;
+    position:absolute;
+}
+input{
+    width:250px;
+    height: 25px;
+    font-size:18px;
+    border:none;
+    outline:none;
+}
+button{
+    width:250px;
+    height:60px;
+    border-radius:25px;
+    font-size:20px;
+    margin-top:60px;
+    padding:15px;
+    background-color: black;
+    color: pink;
+    box-shadow:0px 0px 20px 0.5px pink;
+    font-weight:700px;
+}
+button:hover{
+    background-color:white;
+    color:black;
+}
+.del-date{
+    border:1px solid bisque;
+}
+input{
+    border-radius: 15px;
+    height:25px;
+    padding:10px;
+}
+label{
+    color:white;
+}
+
+.return-btn {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    margin-left: 0; 
+    box-shadow:0px 0px 20px 0.5px pink;
+    border: none;
+    outline:none;
+    width:200px;
+    background-color: black;
+    a{
+    color:pink;}
+}
+.return:hover{
+    background-color: white;
+    a{
+    color:black;}
+}
+a{
+    text-decoration: none;
+}
+.contact{
+  color: white;
+  padding: 15px;
+}
+
+.contact ul li{
+  list-style-type: none;
+  font-size: 15px;
+}
+
+.footer{
+  width: 100%;
+  height: 330px;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media{
+  a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 8px;
+  }
+}
+.ci{
+    margin-top:-10px;
+    margin-left:30px;
+}
+
+    </style>
+    
+</head>
+<body>
+<div class="bgcolor"><br><br>
+    <button class="btn return-btn"><a href="index.html">Return to Home</a></button>
+        <fieldset class="pd-heading">
+            <legend><h1>Delivery Details</h1></legend>
+        </fieldset>
+   </div>
+
+   <div class="delivery">
+     <div class="nm">
+     <label>Presenter Name :</label>
+     <input type="text" placeholder="Enter Presenter Name" required> <br> <br></div>
+
+     <div>
+     <label>Recipient Name : </label>
+     <input type="text" placeholder="Enter Recipient Name" required> <br> <br></div>
+
+     <div>
+     <label>Phone Number : </label>
+     <input type="text" placeholder="Enter Phone Number" required> <br> <br></div>
+
+     <div>
+     <label>Recipient Address :</label>
+     <input type="text" placeholder="Enter Recipient Address" required> <br><br>
+     </div>
+    <div>
+        <label>Delivery date on :</label>
+        <input class="typ" type="datetime-local">
+    </div><br>
+
+    <div>
+     <label>Total amount:1000</label><br><br>
+    <button>Proceed to Payment</button></div>
+</div>
+
+<footer class="footer">
+        <div class="contact">
+            <h3 class="ci">Contact Information :</h3>
+            <br>
+            <ul>
+                <li>Phone : +91 9346069748</li>
+                <li>Email : ganeshdugirala@gmail.com</li>
+            </ul>
+        </div><br>
+        <div class="social-media">
+            <h3>Follow us on :</h3>
+            <br>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div><br>
+        <div class="location">
+            <h3>Our Outlet : </h3>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.081365064772!2d78.35620007332089!3d17.494731199707534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9300472c8303%3A0x4321b9c6e05b642d!2sTech%20Jobs%20(Dr%20Reddy&#39;s%20Foundation)!5e1!3m2!1sen!2sin!4v1757133381164!5m2!1sen!2sin" width="380" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="imgdrf"></iframe>
+        </div>
+    </footer> 
+</body>
+</html>
+   

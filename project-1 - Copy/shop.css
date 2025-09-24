@@ -1,0 +1,225 @@
+h1{
+    margin-left: 450px;
+    margin-top: -50px;
+    font-size: 50px;
+    color: whitesmoke;
+}
+.inputtag{
+    border-radius: 25px;
+     background-color: white;
+}
+input::placeholder{
+    font-size: 18px;
+    color:black;
+   
+}
+
+
+
+
+
+.img{
+    display: flex;
+    margin-left: 270px; 
+}
+.form{
+    display: inline-flex;
+    gap:10px;
+    
+}
+
+.section1{
+   margin-left: -840px;
+    padding-left:10px;
+    padding-top:-40px;
+     padding-right:10px;
+      padding-bottom:20px;
+      margin-top: 250px;
+    border-radius:50px;
+   border: none;
+    background-color: black;
+    color: pink;
+    top:330px;
+    padding:20px;
+     box-shadow: 0px 0px 30px 0.5px pink;
+}
+.section1:hover{
+     background-color: white;
+     color: black;
+}
+.search:hover {
+background-color: white;
+
+}
+
+
+
+
+.nav{
+     margin-right: 900px;
+    
+}
+.img1{
+    margin-left: -2075px;
+     margin-top: 550px;
+      box-shadow: 0px 0px 10px 0.5px pink;
+      height: 520px;
+      border-radius: 20px;
+      
+}
+.img2{
+    margin-left: 100px;
+    margin-top:550px ;
+      box-shadow: 0px 0px 10px 0.5px pink;
+      height: 520px;
+       border-radius: 20px;
+}
+
+.img3{
+    margin-left: 100px;
+    margin-top:550px ;
+      box-shadow: 0px 0px 10px 0.5px pink;
+      height: 520px;
+       border-radius: 20px;
+}
+
+.img4{
+    margin-left: -1250px;
+    margin-top:1150px ;
+      box-shadow: 0px 0px 10px 0.5px pink;
+      height: 520px;
+       border-radius: 20px;
+}
+
+.img5{
+    margin-left: 100px;
+    margin-top:1150px ;
+      box-shadow: 0px 0px 10px 0.5px pink;
+      height: 520px;
+       border-radius: 20px;
+}
+
+.img6{
+    margin-left: 100px;
+    margin-top:1150px ;
+      box-shadow: 0px 0px 10px 0.5px pink;
+      height: 520px;
+       border-radius: 20px;
+}
+.img7{
+    margin-left: -1250px;
+    margin-top:1750px ;
+      box-shadow: 0px 0px 10px 0.5px pink;
+      height: 520px;
+       border-radius: 20px;
+}
+
+.img8{
+    margin-left: 100px;
+    margin-top:1750px ;
+      box-shadow: 0px 0px 10px 0.5px pink;
+      height: 520px;
+       border-radius: 20px;
+}
+
+.img9{
+    margin-left: 100px;
+    margin-top:1750px ;
+      box-shadow: 0px 0px 10px 0.5px pink;
+      height: 520px;
+       border-radius: 20px;
+}
+
+ button {
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: black;
+    font-weight: 600;
+    color: pink;
+    box-shadow: 0px 0px 10px 0.5px pink;
+    margin-right: 65px;
+    a{
+      text-decoration: none;
+      color: pink;
+    }
+    
+  }
+  button:hover {
+    background-color: white;
+    color: black;
+    a{
+      color: black;
+    }
+  }
+
+   .img1:hover {
+    background-color: rgb(245, 25, 135);
+    color: rgb(88, 98, 238);
+   }
+
+   .img2:hover {
+    background-color: rgb(245, 25, 135);
+    color: rgb(88, 98, 238);
+   }
+   .img3:hover {
+    background-color: rgb(245, 25, 135);
+    color: rgb(88, 98, 238);
+   }
+   .img4:hover {
+    background-color: rgb(245, 25, 135);
+    color: rgb(88, 98, 238);
+   }
+   .img5:hover {
+    background-color: rgb(245, 25, 135);
+    color: rgb(88, 98, 238);
+   }
+   .img6:hover {
+    background-color: rgb(245, 25, 135);
+    color: rgb(88, 98, 238);
+   }
+   .img7:hover {
+    background-color: rgb(245, 25, 135);
+    color: rgb(88, 98, 238);
+   }
+   .img8:hover {
+    background-color: rgb(245, 25, 135);
+    color: rgb(88, 98, 238);
+   }
+   .img9:hover {
+    background-color: rgb(245, 25, 135);
+    color: rgb(88, 98, 238);
+   }
+
+
+   
+.contact{
+  color: white;
+  padding: 15px;
+}
+
+.contact ul li{
+  list-style-type: none;
+  font-size: 13px;
+}
+
+.footer{
+  width: 100%;
+  height: 330px;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media{
+  a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 8px;
+  }
+}

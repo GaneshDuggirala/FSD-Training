@@ -1,0 +1,415 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  scrollbar-color: pink rgba(0, 0, 0, 0.92);
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+header {
+  width: 100%;
+  height: 600px;
+}
+
+.head {
+  color: black;
+}
+.mynav {
+  width: 80%;
+  display: flex;
+  border: none;
+  margin-left: 10%;
+  /* margin-right: 2%; */
+  border-radius: 50px;
+  text-align: center;
+  background-color: rgb(255, 192, 203);
+  height: 60px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+  /* box-shadow: 0px 0px 30px 0.5px pink; */
+  position: sticky;
+  top: 20px;
+  z-index: 2;
+  animation-duration: 2s;
+}
+
+.nav-list {
+  display: inline;
+}
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin-left: 25px;
+  font-weight: 700;
+}
+
+.nav-list a:hover {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.mainhead {
+  position: absolute;
+  top: -400px;
+  color: rgba(0, 0, 0, 0.963);
+  font-size: 40px;
+  left: 455px;
+  text-shadow: 0.5px 0.5px rgba(255, 192, 203, 0.833);
+  animation-duration: 1s;
+}
+
+.mainpagecontent {
+  position: absolute;
+  top: 160px;
+  left: 240px;
+  width: 600px;
+  h1 {
+    font-size: 35px;
+    color: pink;
+  }
+  p {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+  }
+  animation-duration: 2s;
+}
+
+.btn-shop {
+  background-color: pink;
+  border: none;
+  a {
+    text-align: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  padding: 15px;
+  border-radius: 30px;
+  position: absolute;
+  top: 400px;
+  left: 240px;
+  transition: all 0.3s ease;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  box-shadow: 0px 0px 10px 0.5px pink;
+}
+
+.btn-shop:hover {
+  background-color: white;
+  a {
+    color: black;
+  }
+  padding: 18px;
+  font-size: 18px;
+}
+
+.flower2 {
+  position: absolute;
+  left: 800px;
+  top: 20px;
+  animation-duration: 2s;
+  /* box-shadow: 0px 0px 10px 0.5px pink; */
+}
+.flower1 {
+  position: absolute;
+  left: 140px;
+  top: 140px;
+  transform: rotate(-50deg);
+  opacity: 55%;
+}
+
+.flower3{
+  position: absolute;
+  width: 100%;
+  height: 465px;
+  opacity: 13%;
+  top: 770px;
+  z-index: -1;
+}
+
+.flower4{
+  position: absolute;
+  width: 100%;
+  height: 465px;
+  opacity: 13%;
+  top: 1240px;
+  z-index: -1;
+}
+.flower5{
+  position: absolute;
+  width: 100%;
+  height: 770px;
+  opacity: 13%;
+  top: 0px;
+  z-index: -1;
+}
+
+.toppicks {
+  width: 100%;
+  height: 550px;
+}
+
+.toppicks-scroll {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-x: scroll;
+  padding: 20px;
+  scroll-behavior: smooth;
+  height: 500px;
+
+  scrollbar-width: thin;
+  scrollbar-color: pink rgba(0, 0, 0, 0.92);
+}
+.card {
+  width: 280px;
+  height: 410px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-left: 100px;
+  transition-duration: 0.5s;
+  box-shadow: 0px 0px 20px 0.5px pink;
+}
+
+.toppicks-head {
+  position: relative;
+  left: 37%;
+  border: 1px solid lightgrey;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  text-align: center;
+  width: 300px;
+  legend {
+    color: pink;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.toppicks .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+  img {
+    width: 260px;
+    height: 230px;
+    border-radius: 20px;
+  }
+  .topli {
+    list-style-type: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: -140px;
+    padding: 3px;
+  }
+  button {
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: black;
+    font-weight: 600;
+    color: pink;
+    box-shadow: 0px 0px 10px 0.5px pink;
+  }
+  button:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.view {
+  margin-right: 40px;
+}
+
+.aboutus {
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.92); */
+}
+
+.insabout {
+  width: 60%;
+  margin-left: 10%;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  line-height: 35px;
+}
+
+.reviews {
+  width: 90%;
+  margin-left: 5%;
+  height: 350px;
+}
+
+.bgcolor {
+  /* background-color: rgba(0, 0, 0, 0.92); */
+  height: 500px;
+}
+
+.abimage{
+  position: absolute;
+  top: 1300px;
+  left: 865px;
+  opacity: 70%;
+  img{
+    width: 400px;
+    height: 400px;
+  }
+  z-index: -1;
+}
+
+
+.contact{
+  color: white;
+  padding: 15px;
+}
+
+.contact ul li{
+  list-style-type: none;
+  font-size: 13px;
+}
+
+.footer{
+  width: 100%;
+  height: 330px;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media{
+  a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width:725px){
+  body{
+    width: 100%;
+    left: 0px;
+  }
+  .toppicks,
+  .aboutus,
+  .footer,
+  header {
+    width: 100%;
+    overflow: hidden;
+  }
+  header{
+    height: 500px;
+    /* width: 400px; */
+
+  }
+  .mynav{
+    position: absolute;
+  }
+  .my-nav-list{
+    display: none;
+    position: absolute;
+    justify-content: center;
+  }
+  .flower2, .flower3, .flower4,.flower5{
+    display: none;
+  }
+  .flower1{
+    left: 200px;
+    top: 100px;
+  }
+
+  .toppicks-head{
+    left: 30%;
+  }
+
+  .mainpagecontent{
+    width: 400px;
+    font-size: 14px;
+    left: 100px;
+    /* overflow-x: hidden; */
+  }
+  .btn-shop{
+    width: 150px;
+    height: 60px;
+    margin-top: 50px;
+    left: 360px;
+  }
+  /* .toppicks{
+    width: 550px;
+  } */
+   .card{
+    margin-left: 50px;
+    border: 1px solid white;
+   }
+  .toppicks-scroll{
+    position: absolute;
+    left: 40px;
+    /* border: 1px solid white; */
+    width: 500px;
+  }
+  .aboutus{
+    width: 100%;
+    height: 700px;
+    margin-left: 100px;
+    .toppicks-head{
+      margin-left: -100px;
+    }
+  }
+ .insabout {
+    width: 100%; 
+  }
+
+  .abimage img{
+    display: none;
+  }
+
+  .reviews{
+    width: 100%;
+    margin-left: 25%;
+  }
+
+.footer {
+    flex-direction: column;
+    width: 630px;
+    height: auto; 
+    align-items: center;
+  }
+}
+
+
+
+/* gets for all buttons */
+
+button a{
+  text-decoration: none;
+  color: pink;
+}
+
+  button:hover{
+    color: black;
+  }
+  button a:hover{
+    color: black;
+  }

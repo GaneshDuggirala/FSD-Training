@@ -1,0 +1,158 @@
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Header */
+
+.my-head>img{
+ height: 50px;
+ width: 200px;
+ margin-left: 50px;
+ margin-top: 10px;
+}
+
+.my-head>h1{
+    display: inline;
+    margin-left: 300px;
+    font-size: 40px;
+}
+
+/* .mymarquee{
+    background-color: black;
+    color: white;
+} */
+/* Navigation bar */
+
+nav{
+    background-color: black;
+    padding: 1px;
+}
+
+.my-nav-list>li{
+    margin-left: 15px;
+    display: inline;
+}
+
+.my-nav-list>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* field set and legend */
+.courses>fieldset{
+    margin-left: 35%;
+}
+
+.courses>fieldset>legend{
+    font-size: 25px;
+}
+
+.courseheading{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    text-align: center;
+    width: 300px;
+}
+
+
+.course>figure>ul>li{
+    list-style-type: none;
+    font-size: 17px;
+}
+
+
+.course{
+    height: 480px;
+    width: 500px;
+    margin-left: 100px;
+}
+
+.skillscenter{
+    text-align: center;
+}
+
+
+.course{
+    margin-top: 10px;
+}
+.ds{
+    margin-left: 650px;
+    margin-top: -494px;
+}
+
+.my-btn-course{
+    /* height: 50px;
+    width: 250px; */
+    font-size: 13px; 
+    font-weight: 700;
+    color: white; 
+    background-color: black; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 13px;
+}
+
+
+
+
+/*  footer */
+.footer{
+    background-color: black;
+    color: white;
+    height: 500px;
+    width: 100%;
+}
+
+.quicklinks{
+    height: 300px;
+    width: 550px;
+    margin-left: 200px;
+    padding: 25px;
+}
+.footer-links>li{
+    list-style-type: none;
+    color: white;
+}
+
+.footer-links>li>a{
+   font-size: 13px;
+   text-decoration: none    ;
+    color: white;
+    display: inline-block;
+}
+
+.location{
+    margin-left: 600px;
+    margin-top: -325px;
+}
+
+/* about us page */
+
+.about-main{
+width: 80%;
+margin-left: 10%;
+}
+
+.about-main>fieldset{
+    margin-left: 310px;
+    font-size: 25px;
+}
+
+.about-main>p{
+    line-height: 1.6;
+    word-spacing: 5px;
+}
+
+.about-main>p>ol>li{
+    line-height: 1.6;
+    word-spacing: 5px;
+}

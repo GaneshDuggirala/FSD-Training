@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Poppins;
+}
+.my-head{
+    position: sticky;
+    background-color: white;
+    top: 0px;
+}
+
+.fa-bars{
+    font-size: 22px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.myytlogo{
+    position: absolute;
+    display: inline;
+    width: 130px;
+    height: 70px;
+    left: 55px;
+    top: -5px;
+}
+
+.search{
+    position: absolute;
+    top: 20px;
+    left: 28%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 4px;
+    input{
+        width: 280px;
+        border: none;
+        outline: none;
+    }
+    .fa-magnifying-glass{
+        border: none;
+        outline: none;
+        /* border-left: 1px solid grey; */
+        padding: 5px;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+}
+
+.fa-microphone{
+    border: none;
+    outline: none;
+    position: absolute;
+    top: .9px;
+    left: -0.2px;
+    margin-left: 6px;
+    margin-top: 7px;
+}
+
+.microphone{
+    position: absolute;
+    text-align: center;
+    left: 690px;
+    top: 20px;
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+    border: 1px solid lightgrey;
+    background-color: rgba(211, 211, 211, 0.368);
+    border-radius: 50%;
+}
+
+.create{
+    position: absolute;
+    left: 990px;
+    top:20px;
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border: 1px solid lightgrey;
+    background-color: rgba(211, 211, 211, 0.368);
+    border-radius: 20px;
+
+}
+
+
+.fa-bell{
+    position: absolute;
+    left: 1120px;
+    top:28px;
+    font-size: 21px;
+}
+
+/* Top Navigation Bar */
+
+
+.mynav{
+    position: sticky;
+    margin-top: 60px;
+    width: 88%;
+    margin-left: 12%;
+}
+.my-nav-list{
+
+}
+
+.nav-list{
+    display: inline;
+}
+
+.nav-list a{
+    margin-left: 20px ;
+    border: none;
+    outline: none;
+    background-color: rgba(211, 211, 211, 0.482);
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    overflow: none;
+}
+
+
+/* Side nav */
+.mysidenav{
+    position: sticky;
+    /* background-color: rgb(242, 15, 15); */
+    overflow: auto;
+    width: 14%;
+    height:500px ;
+    margin-top: -40px;
+    border: none;
+    outline: none;
+}
+
+/* .mysidenav:hover{
+    overflow: auto;
+} */
+
+.nav-list1{
+    list-style-type:none ;
+    margin-top: 20px;
+}
+
+.nav-list1 a{
+    margin-left: -20px ;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.nav-list1  a:hover{
+    background-color: rgba(211, 211, 211, 0.482);
+}
+
+
+/* Body Content */
+
+.main{
+    position: absolute;
+    /* background-color: red; */
+    width: 85%;
+    left:15%;
+    height: 450px;
+    top:125px;
+    overflow-y: scroll;
+}
+
+.movcol2{
+    position: absolute;
+    /* background-color: red; */
+    top:0px;
+    left:34%;
+    height: 450px;
+}
+
+.movcol3{
+    position: absolute;
+    /* background-color: red; */
+    top:0px;
+    left:68%;
+    height: 450px;
+}
