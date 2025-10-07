@@ -1,0 +1,30 @@
+    <!-- Write a JavaScript program to add colors to all h1 tags when the button is clicked  -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>H1</title>
+    </head>
+    <body>
+        
+        <h1>This is 1st H1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur et doloremque excepturi laudantium maxime ipsa suscipit ad animi quam. Numquam amet tenetur eos dolore? Nulla quidem et maiores corrupti?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsa praesentium recusandae, laboriosam cupiditate aperiam hic qui quas esse quia id reiciendis corrupti fugiat sed ad nostrum. Dignissimos, fugiat velit?</p>
+        <h1>This is 2nd H1</h1>
+        <h1>This is 3rd H1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt reiciendis molestiae enim modi autem. Totam ex laborum asperiores. Facere maiores, vel voluptates ducimus ipsam quaerat cupiditate deserunt incidunt. Quae, facere?</p>
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores repudiandae quibusdam maiores itaque aliquam eius, tempora nesciunt incidunt, iste suscipit amet asperiores quasi, excepturi in corrupti qui nulla expedita. Praesentium.</h1>
+        <button onclick="applyColor()">Change color</button>
+
+        <script>
+            function applyColor(){
+                let heading=document.getElementsByTagName('h1');
+                for(let i of heading){
+                    i.style.backgroundColor='red'
+                }
+            }
+        </script>
+    </body>
+    </html>

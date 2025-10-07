@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <center>
+        <h1><b>Registration Form</b></h1><br><br>
+    </center>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <form class="col-md-6 col-sm-10 col-xs-10 ms-2">
+                <label for="" class="form-label">Enter FirstName</label>
+                <input type="text" class="form-control p-2" placeholder="FirstName" id="firstname" required>
+                <label for="" class="form-label">Enter LastName</label>
+                <input type="text" class="form-control p-2" placeholder="LastName" id="lastname" required>
+                <label for="" class="form-label">Enter Email</label>
+                <input type="email" class="form-control p-2" placeholder="example@abc.com" id="email" required>
+                <label for="" class="form-label">Enter password <span>( Ex : firstname : ganesh password: gan@123 )</span></label>
+                <input type="password" class="form-control p-2" placeholder="password" id="password" required>
+                <br>
+                <input onclick="validate()" type="submit" class="btn btn-dark m-2" value="Register">
+            </form>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
