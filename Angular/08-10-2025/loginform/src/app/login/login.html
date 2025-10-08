@@ -1,0 +1,18 @@
+<h1 align="center"> Login Form </h1>
+
+<div class="container-md">
+    <div class="mb-3">
+    <h5><label for="" class="form-label">UserName</label></h5>
+    <input type="text" class="form-control" [(ngModel)]="username">
+</div>
+<div class="mb-3">
+    <h5><label for="" class="form-label">Password</label></h5>
+    <input type="password" class="form-control" [(ngModel)]="currentpassword">
+</div>
+<div class="mb-3">
+    <button class="btn btn-dark" (click)="validateForm()">Submit</button>
+</div>
+<div>
+    <h4 [style]="color">{{result}}</h4>
+</div>
+</div>
