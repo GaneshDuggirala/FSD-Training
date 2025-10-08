@@ -1,0 +1,26 @@
+<br><br>
+<div class="container">
+    <h2>Total Expenses : <span>{{total}}</span></h2>
+</div>
+<br><br>
+<div class="container-md">
+    <div class="row">
+        <div class="col-5 mb-3">
+            <label for="" class="form-label"> Expense Name </label>
+            <input type="text" class="form-control" [(ngModel)]="expense">
+        </div>
+        <div class="col-5 mb-3"> 
+            <label for="" class="form-label"> Amount </label>
+            <input type="number" class="form-control" [(ngModel)]="amount">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <button class="btn btn-secondary" (click)="expensesubmit()"> Submit</button>
+        </div>
+    </div><br>
+    <div class="row">
+        <h4>Your Past Expenses :</h4><br>
+        <p>{{strs}}</p>
+    </div>
+</div>
