@@ -1,0 +1,21 @@
+<h1 align="center"> Top Products </h1><br><hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-12 g-5" *ngFor="let p of arr">
+            <div class="card h-100">
+                <div class="card-header h-100">
+                    <img [src]='p.productImage' class="card-img-top" alt="laptop image" width="150px" height="230px">
+                </div>
+                <div class="card-title h-100">
+                    <h5 class="m-2"><b>{{p.productName}}</b></h5>
+                    <h5 class="m-2 mt-3 mb-3"><b>₹{{p.productPrice}} /-</b></h5>
+                    <p class="m-2"><b>Description : </b>{{p.productDesc}}</p>
+                </div>
+                <div class="card-footer h-100">
+                    <button class="btn btn-dark"> Buy Now </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
