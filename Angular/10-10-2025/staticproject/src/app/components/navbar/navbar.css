@@ -1,0 +1,21 @@
+.nav-link{
+    border: none;
+    outline:none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 45px;
+}
+
+.links{
+ color: black;
+ 
+}
+li span{
+    color: black;
+ }
+
+.links:hover{
+    color: white;
+    background-color: rgb(62, 61, 61);
+    border-radius: 20px;
+}

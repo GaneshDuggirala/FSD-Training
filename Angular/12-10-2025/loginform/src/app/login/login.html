@@ -1,0 +1,45 @@
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Student Form</h3><br><br>
+            <form action="" (ngSubmit)="validateUser()" #userform="ngForm">
+                <div class="forn-group mb-3">
+                    <label for="" class="form-label">Student Id</label>
+                    <input type="text" class="form-control" name="sId" [(ngModel)]="student.sId">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="" class="form-label">Student Name</label>
+                    <input type="text" class="form-control" name="sName" [(ngModel)]="student.sName">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="" class="form-label">Student Marks</label>
+                    <input type="text" class="form-control" name="sMarks" [(ngModel)]="student.sMarks">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="" class="form-label">Student Phone Number</label>
+                    <input type="text" class="form-control" name="sPhone" [(ngModel)]="student.sPhone">
+                </div>
+                <div class="form-group mb-3">
+                    <button class="btn btn-success" [disabled]='!userform.form.valid' type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <h3>Student Table</h3><br><br>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Student Id</th>
+                    <th>Student Name</th>
+                    <th>Student Marks</th>
+                    <th>Student Phone Number</th>
+                </tr>
+                <tr *ngFor="let s of allStudents">
+                    <td>{{s.sId}}</td>
+                    <td>{{s.sName}}</td>
+                    <td>{{s.sMarks}}</td>
+                    <td>{{s.sPhone}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

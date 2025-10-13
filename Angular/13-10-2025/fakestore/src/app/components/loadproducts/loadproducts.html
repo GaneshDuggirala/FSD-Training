@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <br>
+    <h1 align="center">Our Top Selling Products</h1><hr><br>
+    <div class="row g-4">
+        <div class="col-md-4" *ngFor="let p of allproducts">
+            <div class="card">
+                <div class="card-header h-100">
+                    <img [src]="p.image" alt="" class="card-img-top" height="350px">
+                </div>
+                <div class="card-body h-100">
+                    <label for="" class="card-title"><b>Product Name : </b>{{p.title}}</label>
+                    <label for="" class="card-title"><b>Price: </b><span class="text-success">{{p.price |
+                            currency:'INR'}}</span></label>
+                    <label for=""><b>Description : </b>{{p.description}}</label>
+                </div>
+                <div class="card-footer h-100">
+                    <button class="btn btn-dark">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
