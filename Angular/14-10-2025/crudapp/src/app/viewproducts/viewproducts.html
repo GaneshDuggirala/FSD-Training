@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row g-4">
+        <div class="col-md-4" *ngFor="let lap of alllaptops">
+            <div class="card">
+                <div class="card-header">
+                    <img [src]="lap.productImage" alt="" class="card-img-top" height="350px">
+                </div>
+                <div class="card-header">
+                    <p><b>Product Name : </b>{{lap.productName}}</p>
+                    <p><b>Product Price : </b>{{lap.productPrice | currency:'INR'}}</p>
+                    <p><b>Product Description : </b>{{lap.productDescription}}</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-dark">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Loginpage } from './components/loginpage/loginpage';
-import { Loadproducts } from './components/loadproducts/loadproducts';
+import { Loginpage } from './loginpage/loginpage';
+import { Dashboard } from './dashboard/dashboard';
+import { Addproducts } from './addproducts/addproducts';
+import { Viewproducts } from './viewproducts/viewproducts';
+import { Manageproducts } from './manageproducts/manageproducts';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { SquaresPipe } from './pipes/squares-pipe';
-import { Trypipes } from './components/trypipes/trypipes';
 
 @NgModule({
   declarations: [
     App,
     Loginpage,
-    Loadproducts,
-    SquaresPipe,
-    Trypipes
+    Dashboard,
+    Addproducts,
+    Viewproducts,
+    Manageproducts
   ],
   imports: [
     BrowserModule,
