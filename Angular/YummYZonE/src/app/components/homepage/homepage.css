@@ -1,0 +1,112 @@
+/* ===== Hero Section ===== */
+.heroimg {
+  background: url('/assets/hero.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 60px 0;
+  color: white;
+}
+
+.heroimg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1,
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+/* ===== Recipe of the Day Card ===== */
+.hero-card .card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===== Featured Recipes ===== */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* ===== Buttons ===== */
+.btn-lg {
+  padding: 10px 25px;
+  font-size: 1rem;
+}
+
+.btn-sm {
+  padding: 5px 12px;
+  font-size: 0.8rem;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroimg {
+    padding: 40px 0;
+  }
+
+  .hero-card img {
+    height: 180px;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+}

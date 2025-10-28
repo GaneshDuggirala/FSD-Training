@@ -1,0 +1,64 @@
+/* Existing scrolling text and cards styles */
+.scrolling-text {
+  white-space: nowrap;
+  display: inline-block;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.top-activites {
+  overflow-x: scroll;
+  display: flex;
+  gap: 1rem;
+}
+
+.top-activites::-webkit-scrollbar {
+  height: 6px;
+}
+
+.top-activites::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.card {
+  min-width: 300px;
+  flex: 0 0 auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .top-activites .card {
+    min-width: 250px; 
+  }
+}
+
+@media (max-width: 767px) {
+  .top-activites {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .top-activites .card {
+    min-width: 200px; 
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .scrolling-text {
+    font-size: 14px;
+  }
+}

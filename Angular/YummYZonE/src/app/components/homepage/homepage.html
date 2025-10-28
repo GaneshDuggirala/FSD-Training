@@ -1,0 +1,87 @@
+<app-navbar></app-navbar>
+
+<!-- Hero + Recipe of the Day -->
+<section class="heroimg py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left: Quote / Main Text -->
+      <div class="col-md-7 text-light">
+        <h1 class="display-4 fw-bold animate__animated animate__fadeInLeft">
+          Discover Delicious Recipes Anytime 🍕
+        </h1>
+        <p class="lead animate__animated animate__fadeInLeft">
+          Find your next favorite meal by name, ingredient, or category.
+        </p>
+        <a routerLink="/categories">
+          <button class="btn btn-light btn-lg rounded-pill mt-3 animate__animated animate__fadeInLeft">
+            Find Recipe
+          </button>
+        </a>
+      </div>
+
+      <!-- Right: Recipe of the Day -->
+      <div class="col-md-5" *ngIf="randomMeal">
+        <div class="card shadow-sm animate__animated animate__fadeInRight">
+          <div class="card-header bg-warning text-dark fw-bold">
+            🍳 Recipe of the Day
+          </div>
+          <img [src]="randomMeal.strMealThumb" class="card-img-top" [alt]="randomMeal.strMeal">
+          <div class="card-body">
+            <h5 class="card-title">{{ randomMeal.strMeal }}</h5>
+            <p class="card-text text-muted">{{ randomMeal.strCategory }} | {{ randomMeal.strArea }}</p>
+            <a [routerLink]="['/meal', randomMeal.idMeal]" class="btn btn-warning btn-sm">
+              View Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Recipes Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">🍳 Featured Recipes</h2>
+      <p class="text-muted">Discover hand-picked meals for you today!</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let meal of randomMeals ?? []">
+        <div class="card h-100 shadow-sm animate__animated animate__zoomIn">
+          <img [src]="meal.strMealThumb" class="card-img-top" [alt]="meal.strMeal">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ meal.strMeal }}</h5>
+            <p class="card-text text-muted">{{ meal.strCategory }}</p>
+            <a [routerLink]="['/meal', meal.idMeal]" class="btn btn-primary mt-auto">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-5 text-center bg-dark text-light animate__animated animate__fadeIn">
+  <div class="container">
+    <h3 class="fw-bold mb-3">🍽️ Subscribe for Weekly Recipes!</h3>
+    <p class="mb-4">Get latest recipes, tips, and trending meals straight to your inbox.</p>
+    <div class="d-flex justify-content-center">
+      <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+      <button class="btn btn-warning">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-dark text-light text-center animate__animated animate__fadeInUp animate__slow">
+  <div class="container">
+    <p>© 2025 YummyZone by Ganesh Duggirala 🍴</p>
+    <p>
+      <a href="#" class="text-warning me-3">Privacy Policy</a>
+      <a href="#" class="text-warning">Terms & Conditions</a>
+    </p>
+  </div>
+</footer>
+

@@ -1,0 +1,35 @@
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <h2>Event Gallery</h2><br>
+        <div class="col-md-6 d-flex images ">
+            <img [src]="pageevent.image" alt="" width="550px" height="450px" class="p-2">
+            <div *ngFor="let i of pageevent.gallery">
+                <img [src]="i" alt="" width="550px" height="350px" class="p-2">
+            </div>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-5">
+            <br>
+            <h2>{{pageevent.name}}</h2><br>
+            <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;{{pageevent.city}}</p>
+            <p><i class="fa-solid fa-calendar"></i>&nbsp;&nbsp;Daily, 11:00 AM to 6:00 PM</p>
+            <h5>Starts from &nbsp;&nbsp;{{pageevent.price | currency:'INR'}} </h5>
+            
+            <br>
+            <button class="btn btn-dark p-2" (click)="eventbooking(pageevent.id)"><b>Book Tickets</b></button>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <h3>About the Event</h3>
+        <br>
+        <div class="col-md-10">
+            {{pageevent.description}}
+        </div>
+        <br>
+    
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <h2>Ticket Booking</h2><hr>
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-4">
+            <h3>{{bookingevent.name}}</h3>
+            <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;{{bookingevent.city}}</p>
+            <p><i class="fa-solid fa-calendar"></i>&nbsp;&nbsp;Daily, 11:00 AM to 6:00 PM</p>
+        </div>
+
+        <div class="col-md-4">
+            <h5>Regular : &nbsp;&nbsp;&nbsp;<span (click)="sub()" style="cursor: pointer;">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;{{count}}&nbsp;&nbsp;&nbsp;</span><span (click)="add()" style="cursor: pointer;">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</span></h5>
+            <br>
+            <h5>Total Amount : {{ total | currency:'INR' }}</h5>
+            <br>
+            <label for="" class="form-label mb-3">Apply Coupoun :</label>
+            <input type="text" class="form-control mb-3">
+            <button class="btn btn-dark" (click)="paymentdone()">Proceed to Pay</button>
+            <a routerLink="/display/home"><button class="btn btn-danger ms-4">Back to home</button></a>
+        </div>
+    </div>
+</div>
+

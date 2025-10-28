@@ -4,8 +4,15 @@ import { Component } from '@angular/core';
   selector: 'app-manageproducts',
   standalone: false,
   templateUrl: './manageproducts.html',
-  styleUrl: './manageproducts.css'
+  styleUrl: './manageproducts.css',
 })
 export class Manageproducts {
+  alllaptops: any;
+  constructor(private pro: Productservices) {}
 
+  ngOnInit() {
+    this.pro.getProducts().subscribe((data: any) => {
+      this.alllaptops = data;
+    });
+  }
 }

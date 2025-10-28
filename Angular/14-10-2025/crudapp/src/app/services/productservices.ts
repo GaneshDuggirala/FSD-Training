@@ -5,7 +5,7 @@ import { of } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class Productservices {
+export class productservices {
   allProducts: products[] = [
     {
       productId: '1',
@@ -32,4 +32,7 @@ export class Productservices {
     this.allProducts.push(laptop)
     return "Product Added Successfully!!!"
   }
+
+
+
 }

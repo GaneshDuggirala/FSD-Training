@@ -1,0 +1,91 @@
+<div class="row g-4 p-2">
+    <h2 align="center">All Activities
+    </h2>
+    <hr>
+    <div class="col-md-4" *ngFor="let a of allActivites">
+        <div class="card h-100">
+            <div class="card-header">
+                <img [src]="a.image" alt="{{a.name}}" class="card-img-top" height="400px">
+            </div>
+            <div class="card-body">
+                <p><b>Event Name:</b> {{ a.name }}</p>
+                <p><b>Category:</b> {{ a.category }}</p>
+                <p><b><i class="fa-solid fa-location-dot"></i></b>&nbsp;&nbsp;{{ a.city }}</p>
+                <p><b>Entry:</b> {{ a.price | currency: 'INR' }}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-around">
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateModal"
+                    (click)="updateActivity(a)">
+                    Update Activity
+                </button>
+                <button class="btn btn-danger" (click)="deleteActivity(a.id)">Delete Activity</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="updateModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="updateModalLabel">Update Activity</h3>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group mb-2">
+                    <label>ID</label>
+                    <input type="text" class="form-control" [(ngModel)]="updating.id" readonly>
+                </div>
+
+                <div class="form-group mb-2">
+                    <label>City</label>
+                    <input type="text" class="form-control" [(ngModel)]="updating.city">
+                </div>
+
+                <div class="form-group mb-2">
+                    <label>Name</label>
+                    <input type="text" class="form-control" [(ngModel)]="updating.name">
+                </div>
+
+                <div class="form-group mb-2">
+                    <label>Price</label>
+                    <input type="number" class="form-control" [(ngModel)]="updating.price">
+                </div>
+
+                <div class="form-group mb-2">
+                    <label>Image URL</label>
+                    <input type="text" class="form-control" [(ngModel)]="updating.image">
+                </div>
+
+                <div class="form-group mb-2">
+                    <label>Gallery (comma separated URLs)</label>
+                    <input type="text" class="form-control" [(ngModel)]="updating.gallery">
+                </div>
+
+                <div class="form-group mb-2">
+                    <label>Description</label>
+                    <input class="form-control" rows="3" [(ngModel)]="updating.description">
+                </div>
+
+                <div class="form-group mb-2">
+                    <label>Rating</label>
+                    <input type="number" step="0.1" class="form-control" [(ngModel)]="updating.rating">
+                </div>
+
+                <div class="form-group mb-2">
+                    <label>Category</label>
+                    <input type="text" class="form-control" [(ngModel)]="updating.category">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success" (click)="submitActivity()" data-bs-dismiss="modal" type="button"> Update
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>

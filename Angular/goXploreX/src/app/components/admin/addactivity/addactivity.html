@@ -1,0 +1,62 @@
+<div class="container-fluid">
+  <h4 class="text-dark p-2 text-center">Add Activity</h4><br>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form [formGroup]="activityform" (ngSubmit)="submitActivity()">
+        <div class="form-group">
+          <label class="form-label">Activity Id</label>
+          <input type="text" class="form-control" formControlName="id" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Activity City</label>
+          <input type="text" class="form-control" formControlName="city" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Activity Name</label>
+          <input type="text" class="form-control" formControlName="name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Activity Price</label>
+          <input type="text" class="form-control" formControlName="price" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Activity Main Image Link</label>
+          <input type="text" class="form-control" formControlName="image" required>
+        </div>
+
+        <!-- ✅ Gallery as FormArray -->
+        <div class="form-group" formArrayName="gallery">
+          <label class="form-label">Gallery Images</label>
+          <div *ngFor="let g of galleryarr.controls; let i = index" class="input-group mb-2">
+            <input [formControlName]="i" type="text" class="form-control" placeholder="Enter gallery image URL">
+            <button type="button" class="btn btn-danger" (click)="removeGallery(i)">Remove</button>
+          </div>
+          <button type="button" class="btn btn-primary mt-2" (click)="addGallery()">Add Image</button>
+        </div>
+
+        <div class="form-group mt-3">
+          <label class="form-label">Activity Description</label>
+          <input type="text" class="form-control" formControlName="description" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Activity Rating</label>
+          <input type="text" class="form-control" formControlName="rating" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Activity Category</label>
+          <input type="text" class="form-control" formControlName="category" required>
+        </div>
+
+        <div class="form-group mt-3 text-center">
+          <button class="btn btn-success" type="submit">Add Activity</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

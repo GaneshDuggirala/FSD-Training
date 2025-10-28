@@ -1,0 +1,54 @@
+<div class="d-flex overflow-hidden bg-dark text-white p-2">
+  <div class="scrolling-text fs-5">
+    🔥 Book Now and Get 20% Off! &nbsp;&nbsp;&nbsp;&nbsp; 🚗 Limited Time Offer! &nbsp;&nbsp; 🎉 Hurry Up!
+  </div>
+</div>
+<br>
+
+<div class="container-fluid">
+    <h3>Top Events of Week
+    </h3>
+    <div class="top-activites d-flex">
+        <div class="col-md-4 p-3" *ngFor="let a of allEvents">
+            <div class="card h-100" (click)="eventdetails(a.id)">
+                <div class="card-header">
+                    <img [src]="a.image" alt="" class="card-img-top" height="400px">
+                </div>
+                <div class="card-body">
+                    <h5><b>{{a.name}}</b></h5>
+                    <p><b><i class="fa-solid fa-location-dot"></i> </b>&nbsp;&nbsp;{{a.city}}</p>
+                    <p><b>Entry : </b>{{a.price | currency:'INR'}}</p>
+                </div>
+                <div class="card-footer">
+                   <button class="btn btn-dark" (click)="eventbooking(a.id)">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div align="center"><a routerLink="/display/userevents"><button class="btn btn-dark">More Events</button></a></div>
+
+<div class="container-fluid">
+    <h3>Telangana’s Top Activity Spots
+    </h3>
+    <div class="top-activites d-flex">
+        <div class="col-md-4 p-3" *ngFor="let a of allActivites">
+            <div class="card h-100" (click)="activitydetails(a.id)">
+                <div class="card-header">
+                    <img [src]="a.image" alt="" class="card-img-top" height="400px">
+                </div>
+                <div class="card-body">
+                    <h5><b>{{a.name}}</b></h5>
+                    <p><b><i class="fa-solid fa-location-dot"></i> </b>&nbsp;&nbsp;{{a.city}}</p>
+                    <p><b>Entry : </b>{{a.price | currency:'INR'}}</p>
+                </div>
+                <div class="card-footer">
+                   <button class="btn btn-dark" (click)="booking(a.id)">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div align="center"><a routerLink="/display/useractivities"><button class="btn btn-dark">More Activities</button></a></div>

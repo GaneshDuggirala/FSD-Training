@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <br>
+    <h2 align="center">Top Activities
+    </h2>
+    <hr>
+    <div class="row d-flex">
+        <div class="col-md-4 p-3" *ngFor="let a of allActivites">
+            <div class="card" (click)="activitydetails(a.id)">
+                <div class="card-header">
+                    <img [src]="a.image" alt="" class="card-img-top" height="400px">
+                </div>
+                <div class="card-body">
+                    <p><b>{{a.name}}</b></p>
+                    <p><b><i class="fa-solid fa-location-dot"></i> </b>&nbsp;&nbsp;{{a.city}}</p>
+                    <p><b>Entry : </b>{{a.price | currency:'INR'}}</p>
+                </div>
+                <div class="card-footer">
+                   <button class="btn btn-dark">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

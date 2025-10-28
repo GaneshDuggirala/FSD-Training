@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Productservices } from '../services/productservices';
+import { products } from '../services/products';
+import { productservices } from '../services/productservices';
 
 @Component({
   selector: 'app-viewproducts',
@@ -9,7 +10,7 @@ import { Productservices } from '../services/productservices';
 })
 export class Viewproducts {
   alllaptops:any;
-  constructor(private pro:Productservices){}
+  constructor(private pro:productservices){}
 
   ngOnInit(){
     this.pro.getProducts().subscribe((data:any)=>{
