@@ -1,5 +1,6 @@
 var mongoose = require('mongoose')
 
+
 var productSchema = mongoose.Schema({
     productName:String,
     productPrice:Number,
@@ -9,4 +10,4 @@ var productSchema = mongoose.Schema({
 })
 
 
-module.exports = mongoose.model("products",productSchema)
+module.exports = mongoose.model("wishlist",productSchema)
